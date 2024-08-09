@@ -1,0 +1,13 @@
+
+<div><div id="counter-content"><button (click)="increase()">Increase</button>
+<p style="font-size: xxx-large">Number: {{ count$ | async }}</p>
+<button (click)="decrease()">Decrease</button>
+<input (keydown)="updateCount($event)" />
+<button (click)="reset()">Reset</button>
+<div>
+  <p>Current Time: {{ time$ | async | date: "medium" }}</p></div>
+</div>
+<div id="calculator-content">
+<app-calculator></app-calculator>
+</div>
+</div>
